@@ -1,4 +1,4 @@
-(global-set-key [f8] 'neotree-toggle)
+(global-set-key [f6] 'neotree-toggle)
 (setq neo-theme (if (display-graphic-p) 'icons 'arrow))
 
 ;; Every time when the neotree window is opened, let it find current file and jump to node.
@@ -25,3 +25,9 @@
           (lambda () (neo-buffer--with-resizable-window
                       (let ((fit-window-to-buffer-horizontally t))
                         (fit-window-to-buffer)))))
+
+(if (display-graphic-p)
+ (defcustom neo-window-width 40
+  "*Specifies the width of the NeoTree window."
+  :type 'integer
+  :group 'neotree))
