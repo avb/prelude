@@ -1,3 +1,5 @@
+(server-start)
+
 (setq backup-directory-alist `(("." . "~/.saves")))
 (setq-default tab-width 2)
 (setq-default truncate-lines t)
