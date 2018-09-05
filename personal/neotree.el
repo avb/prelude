@@ -1,4 +1,4 @@
-(global-set-key [f4] 'neotree-toggle)
+(global-set-key [f6] 'neotree-toggle)
 
 (setq neo-theme (if (display-graphic-p) 'icons 'arrow))
 

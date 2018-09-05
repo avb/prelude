@@ -1,5 +1,6 @@
 (server-start)
 
+(setq default-frame-alist '((font . "Hack Nerd Font Mono")))
 (setq backup-directory-alist `(("." . "~/.saves")))
 (setq-default tab-width 2)
 (setq-default truncate-lines t)
