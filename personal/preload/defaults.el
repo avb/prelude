@@ -11,3 +11,7 @@
 (setq mouse-wheel-scroll-amount '(1 ((shift) . 1))) ;; one line at a time
 (setq mouse-wheel-progressive-speed 1) ;; don't accelerate scrolling
 (setq scroll-step 1) ;; keyboard scroll one line at a time
+
+(require 'chruby)
+(chruby "ruby-2.5.1")
+(setq flycheck-ruby-rubocop-executable "/Users/adam/.gem/ruby/2.5.1/bin/rubocop")
