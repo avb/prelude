@@ -13,5 +13,5 @@
 (setq scroll-step 1) ;; keyboard scroll one line at a time
 
 (require 'chruby)
-(chruby "ruby-2.5.1")
-(setq flycheck-ruby-rubocop-executable "/Users/adam/.gem/ruby/2.5.1/bin/rubocop")
+(chruby "ruby-2.5.3")
+(setq flycheck-ruby-rubocop-executable "/Users/adam/.gem/ruby/2.5.3/bin/rubocop")
