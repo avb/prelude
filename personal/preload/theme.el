@@ -1,2 +1,2 @@
-(setq prelude-theme 'railscasts)
-(set-cursor-color "#FFDF00")
+(setq prelude-theme 'material)
+;; (set-cursor-color "#FFDF00")
