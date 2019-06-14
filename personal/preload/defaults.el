@@ -1,4 +1,5 @@
-(server-start)
+(load "server")
+(unless (server-running-p) (server-start))
 
 (setq default-frame-alist '((font . "Hack Nerd Font Mono")))
 (setq backup-directory-alist `(("." . "~/.saves")))
@@ -12,6 +13,7 @@
 (setq mouse-wheel-progressive-speed 1) ;; don't accelerate scrolling
 (setq scroll-step 1) ;; keyboard scroll one line at a time
 
-(require 'chruby)
-(chruby "ruby-2.6.0")
-(setq flycheck-ruby-rubocop-executable "/Users/adam/.gem/ruby/2.6.0/bin/rubocop")
+
+(require 'rbenv)
+(global-rbenv-mode)
+(setq flycheck-ruby-rubocop-executable "~/.rbenv/versions/2.6.3/bin/ruby")
